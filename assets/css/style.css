@@ -726,7 +726,7 @@ option {
   width: 100%;
   height: 100%;
   filter: brightness(0.7);
-  background-image: url(/assets/img/Nuhoadao1.png);
+  background-image: url(./Nuhoadao1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
