@@ -202,7 +202,7 @@
             let peachBud = document.createElement("div");
             peachBud.classList = `peachBud`;
             peachBud.innerHTML = `<img src="./assets/img/peachBud.png" alt="peach Bud">`;
-            if (peachBudEle.length < 3) {
+            if (peachBudEle.length < 4) {
               i++;
               let BudId = "trationBud" + i;
               peachBud.id = BudId;

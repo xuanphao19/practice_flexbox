@@ -709,7 +709,10 @@ option {
   display: none;
   z-index: 99999;
 }
-
+.addInfo {
+  background: rgb(255, 131, 131);
+  color: rgb(0, 0, 84);
+}
 #VisualCSS .blossomPeach,
 #VisualCSS .content {
   position: relative;
@@ -750,6 +753,7 @@ option {
   --Bud4: "4";
   --Bud5: "5";
   --Bud6: "6";
+  --Bud7: "7";
   position: relative;
   margin-right: 5px;
   margin-left: 5px;
@@ -759,6 +763,7 @@ option {
 }
 .perfResult .peachBud img {
   max-width: 75px;
+  width: 100%;
   max-height: 75px;
   filter: drop-shadow(0px 0px 12px #ff57bf96);
 }
@@ -779,6 +784,9 @@ option {
 }
 #trationBud6::before {
   content: var(--Bud6);
+}
+#trationBud7::before {
+  content: var(--Bud7);
 }
 .peachBud::before {
   position: absolute;
