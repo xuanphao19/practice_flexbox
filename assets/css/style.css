@@ -449,6 +449,10 @@ hero::-webkit-scrollbar {
   font-size: 15px;
   font-weight: 400;
 }
+#flexboxChart img {
+  width: 100%;
+}
+
 .parentContent {
   width: 50%;
 }
