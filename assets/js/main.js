@@ -159,6 +159,7 @@
               case "center":
               case "space-around":
               case "space-between":
+              case "space-evenly":
                 perf_justifyContent.innerText = value + ";";
                 peachBranch.style.justifyContent = value;
                 break;
@@ -172,8 +173,8 @@
               case "stretch":
               case "baseline":
               case "center":
-              case "space-around":
-              case "space-between":
+              case "flex-start":
+              case "flex-end":
                 perf_alignItems.innerText = value + ";";
                 peachBranch.style.alignItems = value;
                 break;
@@ -230,6 +231,12 @@
             perf_justifyContent.innerText = "flex-start; (default)";
             perf_alignItems.innerText = "stretch; (default)";
             perf_alignContent.innerText = "stretch; (default)";
+            select("#selec_row").selected = "true";
+            select("#selec_nowrap").selected = "true";
+            select("#selec_flexStart").selected = "true";
+            select("#selec_alignItemsStretch").selected = "true";
+            select("#selec_alignContentStretch").selected = "true";
+
             Object.assign(peachBranch.style, {
               flexDirection: "row",
               flexWrap: "nowrap",

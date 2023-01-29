@@ -126,7 +126,6 @@
             <p> Biểu đồ thuộc tính và giá trị thông dụng, cơ bản nhất để làm
               việc với flexbox. </p>
           </div>
-
           <div class="row">
             <div class="content bd_radius16">
               <h3 class="textCenter">Flex property of parent class:</h3>
@@ -361,7 +360,29 @@
               </ul>
             </div>
           </div>
+          <img src="./assets/img/FlexParent.png" alt="">
+          <img src="./assets/img/flexChildren.png" alt="">
+          <img src="./assets/img/HuongTruc.png" alt="">
+          <img src="./assets/img/flex-direction.png" alt="">
+          <img src="./assets/img/flexRow.png" alt="">
+          <img src="./assets/img/flexRow-reverse.png" alt="">
+          <img src="./assets/img/directioncolumn-item.png" alt="">
+          <img src="./assets/img/directionColumn-reverse-item.png" alt="">
+          <img src="./assets/img/flexWrap-noWrap.png" alt="">
+          <img src="./assets/img/flexWrap-Wrap.png" alt="">
+          <img src="./assets/img/wrap-reverse.png" alt="">
+          <img src="./assets/img/justify-content[row].png" alt="">
+          <img src="./assets/img/justify-content[column].png" alt="">
+          <img src="./assets/img/align-items[row].png" alt="">
+          <img src="./assets/img/align-items[column].png" alt="">
+          <img src="./assets/img/align-content.png" alt="">
+          <img src="./assets/img/flex-order.png" alt="">
+          <img src="./assets/img/flex-grow.png" alt="">
+          <img src="./assets/img/flex-shrink.png" alt="">
+          <img src="./assets/img/flex-basis.png" alt="">
+          <img src="./assets/img/align-self.png" alt="">
         </div>
+
       </section><!-- End flexbox Chart Section -->
 
       <!-- ======= VisualCSS Section ======= -->
@@ -415,7 +436,7 @@
           <div class="rowNoWrap row alignStart">
             <div class="grow1 content columnStart">
               <div class="divParent">
-                <h3>Thuộc tính và giá trị CSS Flex</h3>
+                <h3>Thuộc tính và giá trị CSS Flex Parent</h3>
                 <h6>div.parent <i> {</i></h6>
                 <ul class="perfValue">
                   <li>
@@ -448,7 +469,7 @@
                   <li class="selec_direction">
                     <h6>flex-direction: </h6>
                     <select id="selec_direction" name="selec_direction">
-                      <option value="row">row; (default)</option>
+                      <option id="selec_row" value="row">row; (default)</option>
                       <option value="row-reverse">row-reverse;</option>
                       <option value="column">column;</option>
                       <option value="column-reverse">column-reverse;</option>
@@ -458,7 +479,7 @@
                   <li class="selec_wrap">
                     <h6>flex-wrap:</h6>
                     <select id="selec_wrap" name="selec_wrap">
-                      <option value="nowrap">nowrap; (default)</option>
+                      <option id="selec_nowrap"  value="nowrap">nowrap; (default)</option>
                       <option value="wrap">wrap;</option>
                       <option value="wrap-reverse">wrap-reverse;</option>
                     </select>
@@ -467,29 +488,30 @@
                   <li class="selec_justify">
                     <h6>justify-content:</h6>
                     <select id="selec_justify" name="selec_justify">
-                      <option value="flex-start">flex-start; (default)</option>
+                      <option id="selec_flexStart" value="flex-start">flex-start; (default)</option>
                       <option value="flex-end">flex-end;</option>
                       <option value="center">center;</option>
                       <option value="space-around">space-around;</option>
                       <option value="space-between">space-between;</option>
+                      <option value="space-between">space-evenly;</option>
                     </select>
                   </li>
 
                   <li class="selec_alignItems">
                     <h6>align-items:</h6>
                     <select id="selec_alignItems" name="selec_alignItems">
-                      <option value="stretch">stretch; (default)</option>
+                      <option id="selec_alignItemsStretch"  value="stretch">stretch; (default)</option>
                       <option value="baseline">baseline;</option>
                       <option value="center">center;</option>
-                      <option value="space-around">space-around;</option>
-                      <option value="space-between">space-between;</option>
+                      <option value="flex-start">flex-start;</option>
+                      <option value="flex-end">flex-end;</option>
                     </select>
                   </li>
 
                   <li class="selec_alignContent">
                     <h6>align-content:</h6>
                     <select id="selec_alignContent" name="selec_alignContent">
-                      <option value="stretch">stretch; (default)</option>
+                      <option id="selec_alignContentStretch"  value="stretch">stretch; (default)</option>
                       <option value="flex-start">flex-start;</option>
                       <option value="flex-end">flex-end;</option>
                       <option value="center">center;</option>
