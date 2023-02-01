@@ -841,6 +841,7 @@ option {
   display: block;
   height: 686px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .team .member .member-info {
