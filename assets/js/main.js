@@ -115,6 +115,7 @@
       if (parentEle) {
         value = parentEle.value;
         parentId = parentEle.id;
+
       }
       if (parentId) {
         let perf_flexDirection = select(".perf_flexDirection");
@@ -122,7 +123,6 @@
         let perf_justifyContent = select(".perf_justifyContent");
         let perf_alignItems = select(".perf_alignItems");
         let perf_alignContent = select(".perf_alignContent");
-
         switch (parentId) {
           case "selec_direction":
             explain.innerHTML = info_flexDirection.innerHTML;

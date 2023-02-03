@@ -60,25 +60,38 @@ p {
   position: fixed;
   visibility: hidden;
   bottom: 55px;
-  left: 50%;
+  right: 5%;
   transform: translateX(-50%);
   width: 60px;
   height: 40px;
+  color: #fff !important;
+  text-align: center;
+  line-height: 41px;
+  font-size: 20px;
+  font-weight: 600;
   border-radius: 12px;
   background: #006eff5f;
   transition: all 0.4s;
   z-index: 996;
   opacity: 0.5;
 }
-.back-to-top i {
-  font-size: 48px;
-  opacity: 0.5;
-  line-height: 0;
+
+.back-to-top::before {
+  position: absolute;
+  left: 13px;
+  top: -26px;
+  content: "\2602";
+  font-size: 50px;
+  color: #106eea;
+  width: 40px;
+  height: 80px;
 }
+
 .back-to-top:hover {
   opacity: 0.5;
   background: #dd00ff83;
 }
+
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
@@ -842,6 +855,7 @@ option {
   height: 686px;
   margin: 0 auto;
   object-fit: cover;
+  padding: 1px;
 }
 
 .team .member .member-info {
