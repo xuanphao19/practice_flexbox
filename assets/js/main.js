@@ -115,7 +115,6 @@
       if (parentEle) {
         value = parentEle.value;
         parentId = parentEle.id;
-
       }
       if (parentId) {
         let perf_flexDirection = select(".perf_flexDirection");
@@ -278,3 +277,5 @@
     });
   }
 })();
+
+

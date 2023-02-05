@@ -246,14 +246,16 @@ div.header {
   overflow: hidden;
 }
 #header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  font-family: "Poppins", sans-serif;
-  color: #106eea;
+    font-size: 30px;
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -2px;
+    font-family: "Poppins", sans-serif;
+    color: #106eea;
+    transform: scaleX(2);
 }
 
 /*--------------------------------------------------------------
