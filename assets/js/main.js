@@ -276,6 +276,7 @@
       preloader.remove();
     });
   }
+  let dateNow = document.getElementById("dateNow");
+  var dates = new Date();
+  dateNow.value = `${dates}`;
 })();
-
-

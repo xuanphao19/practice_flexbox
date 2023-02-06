@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/img/favicon.ico" rel="icon">
+    <!-- <link rel="stylesheet" href="phao.css"> -->
     <link href="assets/css/style.css" rel="stylesheet">
-
     <title>Hỗ trợ thực hành FlexBox</title>
   </head>
 
@@ -694,7 +694,7 @@
           </div>
 
           <div class="rowNoWrap bd_radius8">
-            <div class="contactLocal grow2">
+            <div class="contactLocal">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d829.9269728399287!2d105.72123787005664!3d20.942648676136482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134526f20576d65%3A0x61f9fcafee30c01b!2zMjDCsDU2JzM1LjIiTiAxMDXCsDQzJzE0LjEiRQ!5e0!3m2!1svi!2s!4v1674227107598!5m2!1svi!2s"
                 style="border:0; width: 100%; height: 384px;" allowfullscreen=""
@@ -703,38 +703,41 @@
 
             </div>
 
-            <div class="contactPost bd_radius16 section-bg grow1">
-              <form action="forms/contact.php" method="post" role="form"
-                class="php-email-form">
-                <div class="rowNoWrap">
+            <div class="contactPost bd_radius4">
+              <form class="FAIpQLSfBACfnPU"
+                action="https://sheetdb.io/api/v1/bvmdmpdtefhdr" method="post"
+                id="sheetdb-form">
 
-                  <div class="grow1 form-group">
-                    <input type="text" name="name" class="form-control"
-                      id="name" placeholder="Your Name" required>
+                <input class="inputs" id="data_email" type="text"
+                  name="data[email]" placeholder="Your mailbox address!">
+                <br>
+                <input class="inputs" id="data_name" type="text"
+                  name="data[name]" placeholder="What is your name?"><br>
+                <input class="inputs" id="data_age" type="text" name="data[age]"
+                  placeholder="your age"><br>
+
+                <input class="inputs" id="data_hobby" type="text"
+                  name="data[hobby]" placeholder="What's your hobby?">
+                <br>
+
+                <div id="rsvpStatus">Giới tính?
+                  <div class="radio-inline">
+                    <label for="radio1"> <input id="radio1" type="radio"
+                        name="data[gender]" value="Nam">Nam</label>
+
+                    <label for="radio2"><input id="radio2" type="radio"
+                        name="data[gender]" value="Nữ">Nữ</label>
+
+                    <label for="radio3"><input id="radio3" type="radio"
+                        name="data[gender]" value="Khác">Khác</label>
                   </div>
-
-                  <div class="grow1 form-group">
-                    <input type="email" class="form-control" name="email"
-                      id="email" placeholder="Your Email" required>
-                  </div>
                 </div>
 
-                <div class="grow1 form-group">
-                  <input type="text" class="form-control" name="subject"
-                    id="subject" placeholder="Subject" required>
-                </div>
+                <input id="dateNow" name="data[date]">
 
-                <div class="grow1 form-group">
-                  <textarea class="form-control" name="message" rows="5"
-                    placeholder="Message" required></textarea>
-                </div>
-
-                <div class="grow1">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                </div>
-                <div class="flexCenter"><button type="submit">Send
-                    Message</button></div>
+                <button class="btn btns" type="submit">
+                  <a id="submits">Submit Form</a>
+                </button>
               </form>
             </div>
 
@@ -750,6 +753,25 @@
     </a>
     <div id="preloader"></div>
 
+    <!-- ❤❤❤🧡💜💙💚💚🧡❤❤❤💖💗💓💞💕❣💔🤍🤎🖤💜💚💛🧡❤ -->
+
     <script src="assets/js/main.js"></script>
+
+    <script>
+      let forms = document.getElementById('sheetdb-form');
+      forms.addEventListener("submit", e => {
+        e.preventDefault();
+        fetch(forms.action, {
+          method: "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+        }).then(
+          response => response.json()
+        ).then((html) => {
+          // you can put any J5 code here
+          window.open('/', '_top');
+        });
+      });
+    </script>
+
   </body>
 </html>
