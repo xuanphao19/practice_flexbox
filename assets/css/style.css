@@ -427,7 +427,6 @@ hero::-webkit-scrollbar {
 .learnGeneral .content ul {
   list-style: none;
 }
-
 .flexboxChart .childrenfx {
   display: flex;
   flex-direction: column;
@@ -615,6 +614,7 @@ hero::-webkit-scrollbar {
 }
 .theExplanation {
   margin-left: 20px;
+  border: 1px solid #dadce0;
 }
 .theExplanation p {
   text-align: center;
@@ -898,7 +898,7 @@ option {
 }
 
 .contact .rowNoWrap {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .contact .info-box {
@@ -921,7 +921,8 @@ option {
   font-size: 14px;
   margin-bottom: 0;
 }
- {
+.contact .info-box {
+  width: 30%;
 }
 .contactLocal,
 .contactPost {
@@ -998,6 +999,7 @@ input#dateNow {
   transition: all 0.4s;
   margin-top: 32px;
   margin-bottom: 40px;
+  color: #898989;
 }
 
 .inputs:hover,
