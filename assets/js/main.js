@@ -13,6 +13,10 @@
   const onscroll = (el, listener) => {
     el.addEventListener("scroll", listener);
   };
+  /**  Easy on click event listener   */
+  const onclick = (el, cb) => {
+    el.addEventListener("click", cb);
+  };
 
   /**  Back to top button   */
   const backToTop = select(".back-to-top");
@@ -36,6 +40,11 @@
     window.addEventListener("load", toggleBackToTop);
     onscroll(document, toggleBackToTop);
   }
+
+  // const onblur = (el, cb) => {
+  //   el.addEventListener("blur", cb);
+  // };
+
   const TeamF8_01 = select(".TeamF8_01");
   const TeamF8_02 = select(".TeamF8_02");
   const TeamF8_03 = select(".TeamF8_03");
@@ -70,9 +79,6 @@
     onscroll(heroScroll, changeView);
   }
 
-  const onclick = (el, cb) => {
-    el.addEventListener("click", cb);
-  };
   const dpl_result = select(".dpl_result");
   if (dpl_result) {
     let dpl_value = select(".dpl_value");

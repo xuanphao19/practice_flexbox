@@ -702,17 +702,16 @@
                 action="https://sheetdb.io/api/v1/bvmdmpdtefhdr" method="post"
                 id="sheetdb-form">
 
-                <input class="inputs" id="data_email" type="text"
-                  name="data[email]" placeholder="Your mailbox address!">
-                <br>
-                <input class="inputs" id="data_name" type="text"
-                  name="data[name]" placeholder="What is your name?"><br>
+                <input data-rules="required email" class="inputs"
+                  id="data_email" type="text" name="data[email]"
+                  placeholder="Your mailbox address!"> <br>
+                <input class="inputs" data-rules="required capitalize"
+                  id="data_name" type="text" name="data[name]"
+                  placeholder="What is your name?"><br>
                 <input class="inputs" id="data_age" type="text" name="data[age]"
                   placeholder="your age"><br>
-
                 <input class="inputs" id="data_hobby" type="text"
-                  name="data[hobby]" placeholder="What's your hobby?">
-                <br>
+                  name="data[hobby]" placeholder="What's your hobby?"> <br>
 
                 <div id="rsvpStatus">Giới tính?
                   <div class="radio-inline">
@@ -722,8 +721,10 @@
                     <label for="radio2"><input id="radio2" type="radio"
                         name="data[gender]" value="Nữ">Nữ</label>
 
-                    <label for="radio3"><input id="radio3" type="radio"
-                        name="data[gender]" value="Khác">Khác</label>
+                    <label for="radio3">
+                      <input id="radio3" type="radio" name="data[gender]"
+                        value="Khác">
+                      Khác</label>
                   </div>
                 </div>
 
@@ -766,6 +767,9 @@
         });
       });
     </script>
-
+    <script src="./assets/js/GiaiDap.js"></script>
+    <script>
+      Validator("#sheetdb-form");
+    </script>
   </body>
 </html>
