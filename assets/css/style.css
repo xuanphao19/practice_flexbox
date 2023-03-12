@@ -47,7 +47,7 @@ p {
   left: calc(50% - 40px);
   width: 80px;
   height: 80px;
-  background-image: url(../img/003.gif);
+  background-image: url(../img/A03.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -427,6 +427,7 @@ hero::-webkit-scrollbar {
 .learnGeneral .content ul {
   list-style: none;
 }
+
 .flexboxChart .childrenfx {
   display: flex;
   flex-direction: column;
@@ -614,7 +615,6 @@ hero::-webkit-scrollbar {
 }
 .theExplanation {
   margin-left: 20px;
-  border: 1px solid #dadce0;
 }
 .theExplanation p {
   text-align: center;
@@ -898,7 +898,7 @@ option {
 }
 
 .contact .rowNoWrap {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contact .info-box {
@@ -921,9 +921,7 @@ option {
   font-size: 14px;
   margin-bottom: 0;
 }
-.contact .info-box {
-  width: 30%;
-}
+
 .contactLocal,
 .contactPost {
   display: flex;
@@ -971,8 +969,7 @@ label.inputs {
   justify-content: space-between;
   width: 75%;
   height: 30px;
-  margin: auto;
-  margin-top: 12px;
+  margin: 18px auto 0;
   border-radius: 9999px;
   background: #b8b1b1;
 }
@@ -986,10 +983,27 @@ label.inputs {
 }
 .radio-inline input {
   margin: 0px;
-  width: 28px !important;
-  height: 28px !important;
+  flex-shrink: 0;
+  margin-right: 5px;
+  appearance: none;
+  width: 42px;
+  height: 42px;
+  padding: 4px;
+  background-clip: content-box;
+  border: 6px solid #ccf1ed;
+  background-color: #d6e5ff;
+  border-radius: 50%;
+  transition: all ease-in 0.3s;
   cursor: pointer;
 }
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #c6fb11;
+  border: 6px solid #93e026;
+  transition: all ease-in 0.3s;
+}
+
 input#dateNow {
   visibility: hidden;
 }
@@ -999,30 +1013,15 @@ input#dateNow {
   transition: all 0.4s;
   margin-top: 32px;
   margin-bottom: 40px;
-  color: #898989;
-}
-
-.inputs:hover,
-.info-box:hover,
-.radio-inline label:hover {
-  opacity: 0.7;
-  transform: scale(1.01);
-  transition: all 0.3s;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-.Contactsaaaa::before {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  background: #ed1111;
-  display: block;
+input + input {
+  margin-top: 20px;
+}
+button#submits {
+  margin-top: 50px;
 }
 
-.Contactsaaaa:hover::before {
-  content: "";
-  background: #000;
-}
