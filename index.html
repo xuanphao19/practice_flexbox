@@ -12,28 +12,30 @@
 
   <body class="notranslate">
     <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="header">
-        <a class="logo" href="index.html">Gunner<span>.</span></a>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#learnGeneral">Learn
-                General</a></li>
-            <li><a class="nav-link scrollto" href="#flexboxChart">Flexbox
-                Chart</a>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#VisualCSS">Visual CSS</a>
-            </li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-      </div>
-    </header><!-- End Header -->
-
+    <div class="wrap_header">
+      <header id="header">
+        <div class="header">
+          <a class="logo" href="index.html">Gunner<span>.</span></a>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#learnGeneral">Learn
+                  General</a></li>
+              <li><a class="nav-link scrollto" href="#flexboxChart">Flexbox
+                  Chart</a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#VisualCSS">Visual CSS</a>
+              </li>
+              <li><a class="nav-link scrollto" href="#team">Team</a></li>
+              <li id="Contacts" class="Contactsaaaa"><a
+                  class="nav-link  scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->
+    </div>
     <main id="main">
       <div id="hero">
         <!-- ======= Hero ======= -->
@@ -74,9 +76,6 @@
           </div>
 
           <div class="rowNoWrap">
-            <div>
-              <img src="assets/img/Flex.png" alt="FlexBox">
-            </div>
             <div class="content">
               <h3>Cấu trúc và phương thức hoạt động của FlexBox:</h3>
               <p class="fst-italic">
@@ -91,7 +90,7 @@
                   <div>
                     <h5>Cấu trúc: </h5>
                     <p class="padLeft20">Gồm các parent class và các children
-                      class</p>
+                      class </p>
                   </div>
                 </li>
                 <li>
@@ -113,6 +112,10 @@
                 hoạt động trước khi bắt đầu.
               </p>
             </div>
+            <div>
+              <img src="assets/img/Flex.png" alt="FlexBox">
+            </div>
+
           </div>
         </div>
       </section><!-- End learnGeneral Section -->
@@ -655,7 +658,7 @@
       </section><!-- End Team Section -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
+      <section id="contact" class="contact Contactsaaaa">
         <div class="container">
 
           <div class="section-title">
@@ -728,7 +731,7 @@
                   </div>
                 </div>
 
-                <input id="dateNow" name="data[date]">
+                <input type="datetime" id="dateNow" name="data[date]">
 
                 <button id="submits" class="btn btns" type="submit">
                   Submit Form
@@ -742,6 +745,8 @@
       </section>
       <!-- End Contact Section -->
     </main>
+
+    <input type="radio">
 
     <a href="#hero" class="back-to-top">
       Top
